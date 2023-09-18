@@ -1,0 +1,21 @@
+
+str = 'X-DSPAM-Confidence:0.8475' 
+
+#Use a função find e o fatiamento de strings para extrair a porção da string
+#depois do sinal de dois pontos, converta a string extraída em um número e
+#multiplique por 100. Exiba o resultado em tela.
+
+#Definir a quantidade de caracteres
+a = print("O tamanho do texto é de ",len(str), "caracteres")
+
+#Pesquisar qual a posição (índice) do caractere ":"
+b = print("Os dois pontos se encontram na posição ", str.find(":"))
+
+#Definir as variáveis num = valor para calculo e num2 valor em número para fazer o calculo
+
+num = str[19:25]
+num2 = float(num)
+
+calc = (num2 * 100)
+
+print("O valor do calculo é: ",calc)
